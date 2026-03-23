@@ -1,0 +1,12 @@
+import cv2
+image = cv2.imread("white.jpg")
+cv2.rectangle(image,(150,150),(400,350),(255,0,0),3)
+cv2.line(image,(100,200),(275,50),(255,0,0),3)
+cv2.line(image,(450,200),(275,50),(255,0,0),3)
+cv2.rectangle(image,(250,350),(300,275),(255,0,0),3)
+cv2.circle(image,(325,225),30,(255,0,0),3)
+cv2.line(image,(325,200),(325,250),(255,0,0),3)
+cv2.line(image,(300,225),(350,225),(255,0,0),3)
+cv2.imshow("output",image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
